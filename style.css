@@ -1,0 +1,815 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: "Space Grotesk", sans-serif !important;
+}
+
+:root {
+    --green: #b9ff66;
+    --greyType: #f3f3f3;
+    --black: #191a23;
+}
+
+.logo {
+    width: 125px;
+    padding-left: 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: sticky !important; 
+    top: 0 !important;
+    color: var(--black) !important;
+    background-color: var(--greyType) !important;
+    z-index: 4 !important;
+}
+
+.menu a {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--black);
+}
+
+.left button {
+    padding: 12px 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--black);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s all ease-in-out;
+}
+
+.navButtonmobile{
+    display: none !important;
+}
+
+.navButtonweb{
+    display: block !important;
+}
+
+.heroSectionImagemobile{
+    display: none !important;
+}
+
+.heroSectionImageWeb{
+    display: block !important;
+}
+
+.navbar-nav {
+    padding-left: 180px !important;
+}
+
+.left button:hover {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--greyType);
+    transition: 0.5s all ease-in-out;
+}
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.heroSection {
+    width: 100%;
+}
+
+.heroSection-left h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.heroSection-left p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.heroSection-left button {
+    font-size: 14px;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--greyType);
+    padding: 11px 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.heroSection-left button:hover {
+    border: 1px solid var(--black);
+    background-color: var(--greyType);
+    color: var(--black);
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+
+.heroSection-right {
+    width: 50%;
+}
+
+.heroSection-right img {
+    width: 90%;
+    margin-left: 15%;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0 100px 0;
+}
+
+.clnt-image img {
+    width: 150px;
+}
+
+#services {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0 60px 0;
+}
+
+#services h2 {
+    font-size: 30px;
+    color: var(--black);
+    background-color: var(--green);
+    padding: 6px;
+    border-radius: 8px
+}
+
+#services p {
+    font-size: 16px;
+    margin-top: 6px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.servicesCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.servicesCardRL {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background-color: var(--greyType);
+    border-radius: 40px;
+    border: 1px solid var(--black);
+    box-shadow: 0 5px 2px -1px rgba(25, 26, 35, 1);
+    padding: 35px;
+}
+
+.rightCard {
+    background-color: var(--green);
+}
+
+.inner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inner-left h3 {
+    font-size: 35px;
+    background-color: var(--green) !important;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.innerColor h3 {
+    background-color: var(--greyType) !important;
+}
+
+.inner-right img {
+    width: 213px;
+    object-fit: cover;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons p {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.icons i {
+    padding: 0px 4px;
+    font-size: 21px;
+    width: 30px;
+    height: 30px;
+    color: var(--green);
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+#workingProcess {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0 60px 0;
+}
+
+#workingProcess h2 {
+    font-size: 30px;
+    color: var(--black);
+    background-color: var(--green);
+    padding: 6px;
+    border-radius: 8px
+}
+
+#workingProcess p {
+    font-size: 16px;
+    margin-top: 6px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.accordion-item {
+    margin: 40px 0;
+}
+
+.accordion-item {
+    background-color: var(--green) !important;
+    border-radius: 40px !important;
+    border: 1px solid var(--black) !important;
+    box-shadow: 0 5px 2px -1px rgba(25, 26, 35, 1) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.accordion-button {
+    color: var(--black) !important;
+    background-color: var(--greyType) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    border-radius: 40px !important;
+    border: 1px solid var(--black) !important;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+.accordion-button span {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--black) !important;
+    background-color: var(--green) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    border-radius: 40px !important;
+    border: 1px solid var(--black) !important;
+    border-top: 4px solid var(--black);
+}
+
+.accordion-body {
+    padding: 16px 50px !important;
+}
+
+.accordion-item .accordion-button {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+
+.accordion-button::after {
+    background-color: var(--greyType) !important;
+    border: 1px solid var(--black) !important;
+    border-radius: 50% !important;
+    padding: 15px !important;
+    background-image: url(assets/images/Plus-Icon.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-color: var(--greyType) !important;
+    border: 1px solid var(--black) !important;
+    border-radius: 50% !important;
+    padding: 15px !important;
+    background-image: url(assets/images/subtract-icon.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    transform: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: none !important;
+}
+
+.accordion-button:focus {
+    z-index: none !important;
+    border-color: #86b7fe;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.accordion-item .accordion-button.collapsed {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+
+#contactUs {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0 60px 0;
+}
+
+#contactUs h2 {
+    font-size: 30px;
+    color: var(--black);
+    background-color: var(--green);
+    padding: 6px;
+    border-radius: 8px
+}
+
+#contactUs p {
+    font-size: 16px;
+    margin-top: 6px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.contactFrom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--greyType);
+    border-radius: 40px;
+    margin-bottom: 100px;
+}
+
+form {
+    margin-left: 100px;
+}
+
+.contactFrom .contactFormDesign img {
+    width: 320px;
+}
+
+.customCheckbox {
+    margin: 60px 0 20px 0;
+    accent-color: green;
+}
+
+.customCheckboxLabel {
+    margin-left: -10px;
+}
+
+input[type=radio] {
+    width: 10%;
+    height: 20px;
+    outline: none;
+}
+
+.contactFrom label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.customInput {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.contactFrom button {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    padding: 15px 0;
+    font-size: 14px;
+    color: var(--greyType);
+    width: 400px;
+    text-align: center;
+    margin-bottom: 60px;
+    transition: 0.5s all ease-in-out;
+}
+
+.contactFrom button:hover {
+    border: 1px solid var(--black);
+    background-color: var(--greyType);
+    color: var(--black);
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+
+footer {
+    background-color: var(--black);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    color: var(--greyType);
+    padding: 40px 70px 20px 70px;
+    margin-top: 100px;
+}
+
+.footerLogo img {
+    width: 140px;
+}
+
+.footerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPages ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footerPages ul li {
+    color: var(--greyType);
+    font-size: 16px;
+    font-weight: 400
+}
+
+.footerIcons a i {
+    color: var(--black);
+    background-color: var(--greyType);
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.subFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactUs h2 {
+    font-size: 20px;
+    color: var(--black);
+    background-color: var(--green);
+    padding: 2px;
+    border-radius: 8px;
+    width: 120px;
+    margin: 40px 0 30px 0;
+}
+
+.contactUs p {
+    margin-bottom: 10px !important;
+    font-size: 16px;
+}
+
+.contactUs address {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.subFooter .subscribeEmail {
+    background-color: #292A32;
+    border-radius: 10px;
+    padding: 40px 35px;
+}
+
+.subscribeEmail input {
+    border: 1px solid var(--greyType);
+    background-color: #292A32;
+    border-radius: 10px;
+    padding: 14px 15px;
+    color: var(--greyType);
+    margin-right: 40px;
+}
+
+.subscribeEmail input::placeholder {
+    color: var(--greyType) !important;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.subscribeEmail button {
+    background-color: var(--green);
+    border-radius: 10px;
+    color: var(--black);
+    padding: 14px 25px;
+    border: 1px solid var(--green);
+    font-weight: 500;
+}
+
+.endFooter {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.endFooter a {
+    color: var(--greyType);
+}
+
+.endFooter a:hover {
+    color: var(--greyType);
+}
+
+.endFooter p {
+    margin-bottom: 0 !important;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #E5F1F3;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+@media (max-width: 400px) {
+    .inner-left h3 {
+        font-size: 23px;
+    }
+    
+    .icons {
+        gap: 2px;
+    }
+
+    .icons p {
+        font-size: 18px;
+    }
+
+    .accordion-button span {
+        font-size: 16px !important;
+    }
+
+    .accordion-item .accordion-button.collapsed {
+        font-size: 30px !important;
+    }
+
+    .customInput {
+        width: 280px !important;
+    }
+
+    .contactFrom button {
+        width: 280px !important;
+    }
+
+    .customCheckboxLabel {
+        margin-left: -5px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+    #services {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #workingProcess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customInput {
+        width: 350px;
+    }
+
+    .contactFrom button {
+        width: 350px;
+    }
+
+    input[type=radio] {
+        width: 10%;
+        height: 15px;
+        outline: none;
+    }
+
+    .contactFrom {
+        margin: 0 10px;
+    }
+
+    .footerPages ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clnt-image img {
+        padding-right: 20px;
+        width: 155px;
+    }
+
+    .endFooter p {
+        font-size: 14px;
+    }
+
+    .endFooter a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .footerIcons a i {
+        padding: 8px;
+        font-size: 22px;
+    }
+
+    .footerPages ul {
+        flex-direction: column;
+        margin: 30px 20px 30px 0;
+        margin-left: 0 !important;
+    }
+
+    .subFooter .subscribeEmail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .heroSection-right img {
+        margin-left: 5%;
+    }
+}
+
+
+@media (max-width: 995px) {
+    form {
+        margin-left: 0 !important;
+    }
+
+    .contactFrom {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactFrom .contactFormDesign img {
+        display: none;
+    }
+
+    .subFooter {
+        flex-direction: column;
+    }
+
+    .clnt-image img {
+        padding-right: 20px;
+        width: 155px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navButtonmobile{
+        display: block !important;
+    }
+
+    .navButtonweb{
+        display: none !important;
+    }
+
+    .heroSectionImagemobile{
+        display: block !important;
+        margin: 0 auto !important;
+        width: 100%;
+    }
+
+    .heroSectionImageWeb{
+        display: none !important;
+    }
+
+    .navbar-nav {
+        padding-left: 14px !important;
+    }
+
+    .left button {
+        margin-left: 14px;
+    }
+
+    .heroSection-left button {
+        width: 100%;
+    }
+
+    .footerHeader {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerLogo img {
+        margin-bottom: 15px;
+    }
+
+    .footerPages ul {
+        margin-left: 40px;
+    }
+
+    .subFooter {
+        text-align: center;
+    }
+
+    .contactUs h2 {
+        font-size: 25px;
+        width: 145px;
+        margin-left: 40px;
+    }
+
+    .endFooter {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .servicesCard {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .servicesCardRL {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .inner-right img {
+        width: 150px !important;
+        object-fit: cover;
+    }
+
+    .clnt-image img {
+        padding-right: 20px;
+        width: 155px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .inner-right img {
+        width: 170px;
+        object-fit: cover;
+    }
+
+    .clnt-image img {
+        padding-right: 20px;
+        width: 155px;
+    }
+
+    .subscribeEmail input {
+        width: 250px;
+        margin: 0;
+    }
+
+    .subFooter .subscribeEmail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
